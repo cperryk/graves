@@ -1,0 +1,231 @@
+
+.int_graves {
+    width: 100%;
+    margin: 1em auto;
+    margin-bottom: 20px;
+    width: 1012px;
+    font-family: 'sl-Apres', verdana;
+}
+.int_graves .graves_wrapper {
+    text-align: center;
+}
+.int_graves .graveyard_sign {
+    width: 100%;
+    max-width: 1012px;
+}
+.int_graves .grave {
+    position: relative;
+    margin: 20px 19px;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    height: 212px;
+}
+.int_graves .grave .symbol {
+    position: absolute;
+}
+.int_graves .grave.empty .inner {
+    cursor: default;
+}
+.int_graves .grave .inner {
+    cursor: pointer;
+}
+.int_graves .grave .tablet {
+    background: url(http://www.slate.com/features/2014/09/graves/img/tablet.png);
+    width: 130px;
+    height: 100px;
+}
+.int_graves .grave .tablet.fresh {
+    background: url(http://www.slate.com/features/2014/09/graves/img/dirt2.png);
+}
+.int_graves .grave .tablet.empty {
+    background: url(http://www.slate.com/features/2014/09/graves/img/empty.png);
+}
+.int_graves .grave .bottom {
+    float: left;
+    width: 100%;
+    height: 5px;
+    margin-top: 2px;
+    font-size: 0.6em;
+    position: relative;
+}
+.int_graves .grave .bottom .learn_more {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.int_graves .grave .bottom .learn_more:hover {
+    text-decoration: underline;
+}
+.int_graves .grave .bottom .flower_count {
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    color: #454545;
+}
+.int_graves .flower {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("http://www.slate.com/features/2014/09/graves/img/flowers/flowers_sprite.png");
+}
+.int_graves .int_loading {
+    font-family: 'Verdana',sans-serif;
+    border: 1px solid #e3e3e3;
+    float: left;
+    padding: 1%;
+}
+.int_graves .int_loading .loading_spinner {
+    margin-right: 10px;
+}
+.int_graves .gravestone {
+    margin-bottom: 5px;
+    width: 130px;
+    background: url(http://www.slate.com/features/2014/09/graves/img/grave.png) center no-repeat;
+    height: 100px;
+}
+.int_graves .gravestone small {
+    text-transform: none;
+    font-size: 1em;
+}
+.int_graves .gravestone .sigil {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 2px;
+}
+.int_graves .name_wrapper {
+    position: absolute;
+    top: 5px;
+    height: 78px;
+    left: 18px;
+    width: 95px;
+    line-height: 100%;
+    font-size: 0.8em;
+    text-align: center;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+.int_graves .name_wrapper td {
+    vertical-align: middle;
+}
+.int_graves .name_wrapper p.name {
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 100%;
+}
+.int_graves .name_wrapper p.sub {
+    font-style: italic;
+    overflow: visible;
+    height: 0px;
+    margin: 0px;
+    font-size: 0.75em;
+    line-height: 100%;
+}
+.grave.flower_added.tooltip_open .flower {
+    opacity: 0.1;
+}
+.grave.flower_added.tooltip_open .added_flower {
+    opacity: 1;
+}
+.grave_tooltip {
+    position: absolute;
+    width: 120px;
+    background: rgba(255,255,255,0.95);
+    padding: 15px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.grave_tooltip p {
+    margin: 0px;
+}
+.grave_tooltip .btn_ex {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 0.6em;
+    color: gray;
+    cursor: pointer;
+    padding: 5px;
+}
+.grave_tooltip .btn_ex:hover {
+    color: #660033;
+}
+.grave_tooltip .share_btn {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left;
+    cursor: pointer;
+    background-color: #e3e3e3;
+    box-shadow: 3px 5px 5px rgba(0,0,0,0.05);
+    color: #660033;
+    width: 90%;
+    margin-top: 10px;
+    line-height: 25px;
+    outline: 1px solid #c7c7c7;
+    padding: 5%;
+}
+.grave_tooltip .share_btn:hover {
+    background-color: #fffbcc;
+}
+.grave_tooltip .share_btn:active {
+    position: relative;
+    top: 1px;
+}
+.grave_tooltip .share_icon {
+    float: left;
+    margin-right: 5px;
+}
+.grave_tooltip .fb_share .share_icon {
+    background: url(http://www.slate.com/features/2014/09/graves/img/share/fb_icon.png);
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+.grave_tooltip .tw_share .share_icon {
+    background: url(http://www.slate.com/features/2014/09/graves/img/share/twitter_icon.png);
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+.grave_tooltip .intSharing_btn_share {
+    width: 94%;
+    padding: 3%;
+}
+.graves_triangle {
+    background: url(http://www.slate.com/features/2014/09/graves/img/triangle.png) center no-repeat;
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+}
+@media screen and (max-width: 580px) {
+    .int_graves {
+      width: 580px;
+      width: 100vw;
+      margin: 1em 0;
+  }
+
+  .int_graves .graveyard_sign {
+      width: 100%;
+  }
+
+  .grave_tooltip {
+      left: 2% !important;
+      padding: 2% !important;
+      border: none;
+      outline: 2px solid black;
+      width: 92%;
+      z-index: 999999;
+  }
+
+  .graves_triangle {
+      display: none !important;
+  }
+
+  .btn_ex {
+      font-size: 1em;
+  }
+}
